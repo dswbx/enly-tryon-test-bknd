@@ -1,0 +1,28 @@
+{
+   "$schema": "node_modules/wrangler/config-schema.json",
+   "name": "enly-tryon-test-bknd",
+   "main": "src/index.ts",
+   "compatibility_date": "2025-02-04",
+   "compatibility_flags": ["nodejs_compat"],
+   "workers_dev": true,
+   "minify": true,
+   "assets": {
+      "directory": "node_modules/enly-tryon-test-bknd/dist/static"
+   },
+   "observability": {
+      "enabled": true
+   },
+   "d1_databases": [
+      {
+         "binding": "DB",
+         "database_name": "enlytryon",
+         "database_id": "8a059c0e-e24c-4d73-9523-8851b6726f0c"
+      }
+   ],
+   "r2_buckets": [
+      {
+         "binding": "BUCKET",
+         "bucket_name": "enlytryon"
+      }
+   ]
+}
